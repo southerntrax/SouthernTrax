@@ -205,23 +205,22 @@ p{
 
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .overlay p {
   color: #00c21f;
-  padding-top: 150px;
-  font-size: 24px;
+  font-size: 24px; /* Base font size */
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
@@ -251,16 +250,16 @@ p{
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 5px;
   align-items: center;
 }
 
 .photo-grid img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  max-height: 170px; /* Limit the height but not fixed */
+  height: auto; /* Allow natural height */
+  object-fit: cover; /* Crop images uniformly */
   border-radius: 5px;
-  max-height: 200px; /* Adjust this value as needed */
   display: block;
   margin: 0 auto;
 }
@@ -546,3 +545,57 @@ Connect
 }
 
   }
+
+  @media (max-width: 600px) {
+    .overlay p {
+        font-size: 18px; /* Smaller font size for mobile */
+    }
+    
+}
+
+.service-item:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 850px) {
+  .services {
+    padding: 0 10px; /* Add padding to the sides */
+  }
+
+  .service-item {
+    width: 100%; /* Make service items full width on mobile */
+    margin: 10px 0; /* Add margin for spacing between items */
+    height: auto; /* Let the height adjust automatically */
+  }
+
+  .service-item img,
+  .service-item video {
+    height: auto; /* Allow the height to adjust automatically */
+    max-height: 80%; /* Set a maximum height for images/videos */
+    width: 100%; /* Ensure images take up the full width of the container */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+  }
+
+  .services h3 {
+    font-size: 24px; /* Adjust service title size for mobile */
+  }
+
+}
+
+@media (max-width: 768px) { /* Adjust the max-width as needed for your design */
+  .short-service {
+      /* Adjust the height for mobile */
+      height: 250px; /* Set your desired height (increased from 150px) */
+      overflow: hidden; /* Prevent content overflow */
+  }
+  
+  .short-service img {
+      height: auto; /* Maintain aspect ratio */
+      max-height: 100%; /* Ensure image fits within the shorter height */
+  }
+
+  .short-service .overlay {
+      /* Optional: Adjust the overlay size or padding if needed */
+      padding: 5px; /* Adjust padding for better appearance */
+  }
+}
