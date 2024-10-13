@@ -1,553 +1,176 @@
-  /******************************************
-  /* Reset
-  /*******************************************/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* 
-Header & Footer
-*/
-.primary-nav {
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: .5px;
-  text-transform: uppercase;
-  padding-top: 50px;
-}
-.nav {
-  display: flex;
-  justify-content: center;
-}
-
-.primary-header a,
-.primary-footer a {
-  color: black;
-}
-.primary-header a:hover,
-.primary-footer a:hover {
-  color: #344945;
-}
-
-.nav li {
-  display: inline-block;
-  margin: 10px;
-  vertical-align: top;
-}
-
-.primary-footer{
-  padding-top: 50px;
-  padding-bottom: 15px;
-}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Southern Trax</title>
+  <link rel="icon" type="image/png" href="assets/oldlogo.png">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+  <meta charset="utf-8">
+  <meta name="keywords" content="southerntrax">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap">
+</head>
 
 
-  /******************************************
-  /* Styles
-  /*******************************************/
+<body>
+<header class="primary-header">
+    <nav class="nav primary-nav">
+        <ul>
+          <li><a href="index.html">Southern Trax</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="connect.html">Connect</a></li>
+        </ul>
+      </nav>
+</header>
 
-body{
-  background: black;
-  color: white;
-  margin: 0 250px;
-}
+<section class="logo">
+<img src="assets/logo.png" alt="">
+</section>
 
-h1, h2, h3, h4 {
-  color: #00c21f;
-}
+<section class="homecontent">
+  <p>At Southern Trax, we don't just specialize in land clearing, brush cutting, excavation, and demolition—we redefine what's possible. Our team is equipped with the expertise and cutting-edge tools to tackle projects of any scale, ensuring that every detail meets the highest standards of quality and craftsmanship.</p>
+  <p>But we don’t stop there. From expertly crafted driveways to lush sod installation, hydroseeding, and robust fencing solutions, we offer a full range of services designed to enhance and elevate your properties appearance and utilization. Contact us today for a tailored quote, and let us bring your project to life with unmatched excellence.</p>
 
-h1 {
-  font-size: 25px;
-  line-height: 44px;
-  text-transform: capitalize;
-}
-h2 {
-  font-size: 20px;
-  line-height: 44px;
-}
-h3 {
-  font-size: 18px;
-}
-h4 {
-  font-size: 16px;
-}
-h5 {
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-p{
-  font-size: 15px;
-  font-weight: 381;
-  padding: 5px 0;
-}
+  <button class="contact-button" onclick="location.href='tel:+16625079670';">
+    Call Now for a personalized quote
+</button>
 
-  
+</section>
 
-    /******************************************
-  /* Index
-  /*******************************************/
-.primary-header{
-  display: none;
-}
+<section class="services">
+  <h3>Our Services</h3>
 
+  <div class="service-item">
+    <img src="assets/servgrading.jpg" alt="Service 1">
+    <div class="overlay">
+        <p>Final Grading</p>
+    </div>
+  </div>
 
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 50px;
-}
+  <div class="service-item special-service">
+    <img src="assets/servehydro.gif" alt="Service 4">
+    <div class="overlay">
+        <p>Hydroseeding</p>
+    </div>
+</div>
 
-.logo img {
-  padding: 20px;
-  height: 95%;
-  width: 95%;
-  margin: 10px 0;
-  vertical-align: top;
-}
+  <div class="service-item">
+    <img src="assets/servfencing.jpg" alt="Service 2">
+    <div class="overlay">
+        <p>Fencing</p>
+    </div>
+  </div>
 
+  <div class="service-item special-service">
+    <img src="assets/servemulch.JPG" alt="Service 4">
+    <div class="overlay">
+        <p>Forestry Mulching</p>
+    </div>
+  </div>
 
+  <div class="service-item">
+    <img src="assets/servedriveways.jpg" alt="Service 3">
+    <div class="overlay">
+        <p>Driveways</p>
+    </div>
+  </div>
 
-.contact-button {
-  display: block;
-  padding: 12px 20px;
-  margin: 0 auto 20px auto;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  background-color: #00c21f;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  transition: background-color 0.3s ease;
-}
+  <div class="service-item">
+    <img src="assets/serveexca.jpg" alt="Service 4">
+    <div class="overlay">
+        <p>Excavation</p>
+    </div>
+  </div>
 
-.contact-button:hover {
-  background-color: #00991a; /* Darker shade of green for hover effect */
-}
+  <div class="service-item">
+    <img src="assets/servesod.jpg" alt="Service 4">
+    <div class="overlay">
+        <p>Sod</p>
+    </div>
+  </div>
 
-.homecontent p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: white;
-  max-width: 600px;
-  margin: 0 auto 20px auto;
-  text-align: center;
-}
+  <div class="service-item">
+    <img src="assets/servebrushcuttingnew.JPG" alt="Service 4">
+    <div class="overlay">
+        <p>Brush Cutting</p>
+    </div>  
+  </div>
 
+  <div class="service-item">
+    <img src="assets/servedemo.jpg" alt="Service 4">
+    <div class="overlay">
+        <p>Demolition</p>
+    </div>
+  </div>
 
-  /*/
-  Services
-  /*/
+  <div class="service-item">
+    <img src="assets/serveprecisiongrading.jpg" alt="Service 4">
+    <div class="overlay">
+        <p>Precision Grading</p>
+    </div>
+  </div>
 
-  .services {
-    text-align: center;
-    margin-bottom: 40px;
-}
+  <div class="service-item">
+    <img src="assets/servestrumpremoval.jpg" alt="Service 4">
+    <div class="overlay">
+        <p>Stump Removal</p>
+    </div>
+  </div>
 
-.services h3 {
-    padding-top: 20px;
-    margin-bottom: 20px;
-    color: #00c21f;
-    font-size: 28px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.service-item {
-    position: relative;
-    display: block;
-    margin: 15px auto;
-    width: 80%;
-    max-width: 500px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.service-item img,
-.service-item video {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover ensures the image fills the area */
-    border-radius: 10px;
-}
-
-.special-service img,
-.special-service video {
-    width: 100%;
-    height: 100%; /* Set height to 100% */
-    object-fit: cover; /* Cover ensures the image fills the area */
-    border-radius: 10px;
-}
+</section>
 
 
-
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.overlay p {
-  color: #00c21f;
-  padding-top: 150px;
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
-  text-shadow: 
-      -1px -1px 0 #000, /* Top-left outline */
-      1px -1px 0 #000,   /* Top-right outline */
-      -1px 1px 0 #000,   /* Bottom-left outline */
-      1px 1px 0 #000;    /* Bottom-right outline */
-}
-
-
-.service-item:hover .overlay {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-
-
-  /*/
-  Photo Gallery
-  /*/
-
-  .gallery {
-    padding: 15px;
-}
-
-
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
-  align-items: center;
-}
-
-.photo-grid img {
-  width: 100%;
-  max-height: 170px; /* Limit the height but not fixed */
-  height: auto; /* Allow natural height */
-  object-fit: cover; /* Crop images uniformly */
-  border-radius: 5px;
-  display: block;
-  margin: 0 auto;
-}
-
-
-
-
+<button class="contact-button" onclick="location.href='mailto:aharrington@southerntrax.com';">
+  TELL US ABOUT YOUR PROJECT!
+</button>
 
   
-
-
-.contactus{
-  padding: 30px;
-}
-
-
-  /*/
-  SocMed
-  /*/
-
-  .socmed {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.socmed ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    width: 100%; /* Ensure the icons are evenly spread across the available space */
-    max-width: 400px; /* Set a max-width to prevent the icons from being too spread out */
-}
-
-.socmed li {
-    margin: 0;
-    flex-grow: 1; /* Ensure each item takes equal space */
-    display: flex;
-    justify-content: center; /* Center each icon within its container */
-}
-
-.socmed img {
-    width: 40px; /* Adjusted size */
-    height: 40px;
-    transition: transform 0.3s ease;
-}
-
-.socmed img:hover {
-    transform: scale(1.2);
-}
-
-
-
-
-
-/******************************************
-  /* contact
-  /*******************************************/
-
- .contactpage h2{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-}
-
-.contactpage div{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-}
+<section class="gallery">
+  <div class="photo-grid">
+    <img src="assets/newcollage10.png" alt="Photo 1">
+    <img src="assets/collage4.jpg" alt="Photo 2">
+    <img src="assets/collage9.jpg" alt="Photo 3">
+    <img src="assets/collage8.jpg" alt="Photo 4">
+    <img src="assets/collage12.jpg" alt="Photo 6">
+    <img src="assets/collage2.jpg" alt="Photo 5">
+    <img src="assets/collage5.jpg" alt="Photo 7">
+    <img src="assets/collage11.jpg" alt="Photo 8">
+    <img src="assets/newcollage3.png" alt="Photo 9">
+  </div>
+</section>
   
-  .contactpage form {
-    padding-top: 100px;
-  }
+<div class="contactus">
+<button class="contact-button" onclick="location.href='tel:+16625079670';">
+  Contact Us
+</button>
+</div>
 
-  .register-group label {
-    color: #000000;
-    cursor: pointer;
-    font-weight: 400;
-  }
-  .register-group input,
-  .register-group select,
-  .register-group textarea {
-    border: 1px solid #c6c9cc;
-    border-radius: 5px;
-    color: #888;
-    display: block;
-    margin: 5px 0 27px 0;
-    padding: 5px 8px;
-  }
-  .register-group input,
-  .register-group textarea {
-    width: 100%;
-  }
-  .register-group select {
-    height: 34px;
-    width: 60px;
-  }
-  .register-group textarea {
-    height: 78px;
-  }
 
-  form {
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: #00c21f;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  form input,
-  form textarea {
-    width: 100%;
-    max-width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box; /* Include padding and border in width */
-  }
-  
-  form textarea {
-    height: 150px;
-  }
-  
-  form button {
-    background-color: white;
-    color: #333;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
+<section class="socmed">
+  <ul>
+    <li><a href="tel:+16625079670">
+      <img src="assets/phoneg.png" alt="Call Us"></a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=100075266006905"><img src="assets/fbg.png" alt="Facebook"></a></li>
+      <li><a href="https://www.instagram.com/southern_trax_llc/"><img src="assets/instag.png" alt="Instagram"></a></li>
+      <li><a href="mailto: aharrington@southerntrax.com"><img src="assets/mailg.png" alt="Email"></a></li>
+  </ul>
+</section>
 
-  /*/
-  sc footer
-  /*/
-  .sc-footer {
-    text-align: right;
-    font-size: 12px;
-    color: #555;
-    padding-top: 10px;
-    margin-top: 20px;
-}
 
-.sc-footer a {
-    color: #B8860B;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-}
 
-.sc-footer a img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}
+<footer class="primary-footer">
+    <nav class="nav">
+        <ul>
+        </ul>
+      </nav>
+</footer>
 
-.sc-footer a:hover {
-    color: #0056b3;
-}
-  
+<div class="sc-footer">
+  <a href="https://servingchampions.com" target="_blank">
+      <img src="assets/sclogo.png" alt="Serving Champions LLC Logo">
+      Website Created by Serving Champions LLC
+  </a>
+</div>
 
-/******************************************
-  /* Responsive STYLES
-  /*******************************************/
-  @media screen and (max-width: 850px) {
-/* 
-Reset
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-/* 
-Custom Styles
-*/
-
-body{
-  background: #;
-  color: ;;
-  margin: 0 15px;
-}
-
-h1, h2, h3, h4 {
-  color: #;
-}
-
-h1 {
-  font-size: 25px;
-  line-height: 44px;
-  text-transform: capitalize;
-}
-h2 {
-  font-size: 20px;
-  line-height: 44px;
-}
-h3 {
-  font-size: 18px;
-}
-h4 {
-  font-size: 16px;
-}
-h5 {
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-p{
-  font-size: 15px;
-  font-weight: 381;
-  padding: 5px 0;
-}
-
-/* 
-Buttons
-*/
-
-.button-container {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 5px; /* Adjust margin as needed */
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #3498db; /* Adjust background color as needed */
-  border-radius: 5px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.button:hover {
-  background-color: #2980b9; /* Adjust hover background color as needed */
-}
-
-/* 
-Connect
-*/
-
-.contactpage h2{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-}
-
-.contactpage div{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-}
-
-#contactform{
-  display: none;
-}
-
-  }
+ </body>
+</html>
