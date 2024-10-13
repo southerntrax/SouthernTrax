@@ -188,10 +188,21 @@ p{
 .service-item img,
 .service-item video {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover ensures the image fills the area */
     border-radius: 10px;
 }
+
+.special-service img,
+.special-service video {
+    width: 100%;
+    height: 100%; /* Set height to 100% */
+    object-fit: cover; /* Cover ensures the image fills the area */
+    border-radius: 10px;
+}
+
+
+
 
 .overlay {
     position: absolute;
@@ -236,20 +247,25 @@ p{
     padding: 15px;
 }
 
+
 .photo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-items: center;
 }
 
 .photo-grid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 5px;
-    aspect-ratio: 1/1; /* Ensures all images are square */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  max-height: 200px; /* Adjust this value as needed */
+  display: block;
+  margin: 0 auto;
 }
+  
+
 
 .contactus{
   padding: 30px;
